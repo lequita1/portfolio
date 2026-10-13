@@ -1,0 +1,6 @@
+# Local preview, publishing staging, and QA output are not assignment files.
+tmp/
+.site-preview/
+node_modules/
+output/
+*.log
