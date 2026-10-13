@@ -12,7 +12,6 @@
   --control-border: #6b7785;
   --button-text: #171b20;
   --paper: #e9e6df;
-  --paper-text: #434b53;
   --display: 'Bricolage Grotesque', 'Segoe UI', sans-serif;
   --body: 'Manrope', 'Segoe UI', sans-serif;
   --mono: 'Consolas', 'Liberation Mono', monospace;
@@ -84,15 +83,11 @@ section, footer { scroll-margin-top: 110px; }
 /* A slightly rotated photo mount is the signature; the portrait stays intact. */
 .hero { padding-top: 64px; display: grid; grid-template-columns: .91fr 1.35fr; gap: 42px 84px; align-items: center; }
 .portrait-column { padding: 14px 12px 0; }
-.portrait-frame { background: var(--paper); padding: 15px 15px 8px; transform: rotate(-4deg); box-shadow: 0 18px 48px #00000025; transition: transform .4s ease; }
+.portrait-frame { background: var(--paper); padding: 15px; transform: rotate(-4deg); box-shadow: 0 18px 48px #00000025; transition: transform .4s ease; }
 .portrait-frame:hover { transform: rotate(-2deg); }
 .portrait-image { height: 360px; overflow: hidden; background: #bdc4ca; }
 .portrait-image img { width: 100%; height: 100%; object-fit: cover; object-position: 54% center; filter: grayscale(1); transition: filter .5s ease, transform .5s ease; }
 .portrait-frame:hover img { filter: grayscale(.15); transform: scale(1.025); }
-.portrait-frame figcaption { display: flex; justify-content: center; align-items: center; gap: 22px; padding: 13px 0 9px; color: var(--paper-text); font-family: var(--hand); font-size: 25px; line-height: 1.1; }
-.portrait-frame figcaption span { font-family: var(--body); font-size: 21px; }
-.portrait-caption { display: flex; align-items: center; justify-content: center; gap: 12px; font-family: var(--mono); font-size: 12px; letter-spacing: .02em; color: var(--muted); margin-top: 37px; }
-.tiny-star { color: var(--accent); font-size: 20px; }
 .small-cross { color: var(--accent); font-size: 18px; margin-right: 7px; }
 .hero h1 { font-size: clamp(74px, 8vw, 108px); font-weight: 700; margin: 10px 0 16px; letter-spacing: -.025em; line-height: .98; }
 .hero-intro { font-family: var(--display); font-size: clamp(29px, 3.1vw, 43px); font-weight: 500; line-height: 1.16; letter-spacing: -.04em; }
@@ -215,7 +210,6 @@ section, footer { scroll-margin-top: 110px; }
   .container { width: calc(100% - 64px); }
   .hero { gap: 40px 54px; grid-template-columns: .95fr 1.2fr; padding-top: 66px; }
   .portrait-image { height: 310px; }
-  .portrait-frame figcaption { font-size: 22px; gap: 12px; }
   .project { gap: 35px; grid-template-columns: 1.45fr 1fr; }
   .project-second { grid-template-columns: 1fr 1.45fr; }
   .project-visual { padding: 17px; }
@@ -239,7 +233,6 @@ section, footer { scroll-margin-top: 110px; }
   .hero-intro { font-size: clamp(35px, 7vw, 45px); }
   .hero-description { max-width: 520px; }
   .portrait-image { height: 295px; }
-  .portrait-caption { margin-top: 29px; }
   .hero-bottom { margin-top: 0; padding-top: 4px; }
   .hero-bottom .utility { font-size: 12px; }
   .scroll-cue { font-size: 11px; gap: 9px; }
@@ -289,7 +282,6 @@ section, footer { scroll-margin-top: 110px; }
   .hero-links .button { gap: 14px; padding-inline: 15px; font-size: 13px; white-space: nowrap; }
   .hero-bottom { align-items: flex-start; flex-direction: column; gap: 4px; padding-bottom: 15px; }
   .hero-bottom .utility { font-size: 12px; }
-  .portrait-frame figcaption { font-size: 21px; }
   .visual-topline { margin-bottom: 18px; font-size: 10px; }
   .visual-bottomline { flex-direction: column; align-items: flex-start; gap: 9px; margin-top: 15px; }
   .visual-bottomline .handwritten { align-self: flex-end; }
