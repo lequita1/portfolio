@@ -22,7 +22,7 @@ A simple pet-care app made with Flutter and SQLite. It keeps pet profiles, remin
 - Mobile navigation menu
 - Expandable project descriptions
 - Full-size screenshots
-- Email and GitHub links
+- Email, GitHub, and LinkedIn links with icons
 - Copy email button
 
 ## Running it
